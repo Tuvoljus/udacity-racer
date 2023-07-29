@@ -359,16 +359,6 @@ function getTracks() {
     .catch((err) => console.log('Problem with getTracks request::', err));
 }
 
-// function getRacers() {
-//   // GET request to `${SERVER}/api/cars`
-//   return fetch(`${SERVER}/api/cars`, {
-//     method: 'GET',
-//     ...defaultFetchOpts(),
-//   })
-//     .then((res) => res.json())
-//     .catch((err) => console.log('Problem with GetCars request::', err));
-// }
-
 async function getRacers() {
   try {
     const racerResponse = await fetch(`${SERVER}/api/cars`, {
@@ -398,19 +388,6 @@ async function createRace(player_id, track_id) {
     return console.log('Problem with createRace request::', err);
   }
 }
-
-// async function getRace(id) {
-//   // GET request to `${SERVER}/api/races/${id}`
-//   try {
-//     const res = await fetch(`${SERVER}/api/races/${id}`, {
-//       method: 'GET',
-//       ...defaultFetchOpts(),
-//     });
-//     return await res.json();
-//   } catch (err) {
-//     return console.log('Problem with Get Race ID request::', err);
-//   }
-// }
 
 async function startRace(id) {
   try {
@@ -442,10 +419,6 @@ async function getRace(id) {
 }
 
 async function accelerate(id) {
-  // POST request to `${SERVER}/api/races/${id}/accelerate`
-  // options parameter provided as defaultFetchOpts
-  // no body or datatype needed for this request
-  // Review: Use a const
   try {
     return await fetch(`${SERVER}/api/races/${id}/accelerate`, {
       method: 'POST',

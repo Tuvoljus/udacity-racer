@@ -1,0 +1,1 @@
+console.log(positions, "POSITIONS"); // Log the positions array to inspect its contents

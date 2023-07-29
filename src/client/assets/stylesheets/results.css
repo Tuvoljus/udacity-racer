@@ -1,11 +1,17 @@
 /* RESULTS PAGE SPECIFIC STYLES */
 
 /* -------------------  MOBILE  --------------------- */
+header {
+  background-image: url('../images/Udemy-Racer-Cars_Racer1.jpg');
+}
 
+main#two-columns {
+  margin: 50px 0;
+  display: flex;
+}
 
 /* -------------------  TABLET  --------------------- */
 @media (min-width: 768px) {
-
 }
 
 /* -------------------  DESKTOP  -------------------- */
